@@ -10,6 +10,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
 
 <style>
 body{
@@ -40,7 +46,7 @@ h1{
   margin: 0 auto 0 auto;
   padding:0px 0px 70px 0px;
   border: #ba996d 4px solid; 
-  height: 350px;
+  height: 480px;
 }
 
 .email{
@@ -118,19 +124,26 @@ background:#3594D2;
 
 </head>
 <body>
-
+<br><br><br><br>
  <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
 
-<form method="post" action="index.html">
+<form action="newUser" method="post">
 <div class="box">
 <h1>register here</h1>
 
-<input type="email" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
-  
-<input type="text" name="password" value="password" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
-<input type="text" name="password" value="repeat password" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
+  <input type="text" name="name" placeholder="enter ur name" class="email" />
 
-<a href="#"><div class="btn" style="width: 90%;">Sign Up</div></a>
+<input type="text" name="email" placeholder="email" class="email" />
+  
+  <input type="text" name="address" placeholder="enter address" class="email" />
+  
+    <input type="text" name="phone_number" placeholder="phone no" class="email" />
+  
+<input type="password" name="password" placeholder="password" class="email" />
+<input type="password" name="confirm_password" placeholder="repeat password" class="email" />
+
+<div class="btn" style="width: 90%;"><input type="submit" name="submit" value="Sign Up">
+</div></a>
 <a href="http://localhost:8080/ekartfrontend/"><div class="btn2" style="width: 90%;">cancel</div></a>
  <!-- End Btn2 -->
   
@@ -139,6 +152,8 @@ background:#3594D2;
 </form>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+
+
 
 </body>
 </html>

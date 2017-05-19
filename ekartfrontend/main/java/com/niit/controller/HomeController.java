@@ -18,12 +18,13 @@ public class HomeController {
 	}
 	
 	
+	
 	@RequestMapping("/LoginPage")
 	public String loginPage(Model model)
 	{
 		model.addAttribute("isUserClickedLogin", "true");
 	
-		return "Login";
+		return "Home";
 	}
 	
 	@RequestMapping("/RegistrationPage")
@@ -31,7 +32,7 @@ public class HomeController {
 	{
 		model.addAttribute("isUserClickedRegister", "true");
 		
-		return "Registration";
+		return "Home";
 	}
 
 	@RequestMapping("/mendigiPage")
@@ -39,7 +40,7 @@ public class HomeController {
 	{
 		model.addAttribute("isUserClickedDigital", "true");
 		
-		return "mendigi";
+		return "Home";
 	}
 
 	@RequestMapping("/menanalogPage")
@@ -47,15 +48,15 @@ public class HomeController {
 	{
 		model.addAttribute("isUserClickedAnalog", "true");
 		
-		return "menanalog";
+		return "Home";
 	}
 
 	@RequestMapping("/colordialPage")
 	public String colordialPage(Model model)
 	{
-		model.addAttribute("isUserClickedcolored dials", "true");
+		model.addAttribute("isUserClickedcolordials", "true");
 		
-		return "colordial";
+		return "Home";
 	}
 
 	@RequestMapping("/sportyPage")
@@ -63,8 +64,18 @@ public class HomeController {
 	{
 		model.addAttribute("isUserClickedsporty", "true");
 		
-		return "sporty";
+		return "Home";
 	}
 	
 	
+
+	@RequestMapping("/HomePage")
+	public String homePage(Model model)
+	{
+		model.addAttribute("isUserClickedHome", "true");
+		
+		return "Home";
+	}
+	
 }
+

@@ -3,22 +3,23 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
- <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 <style>
 body{
   font-family: 'Open Sans', sans-serif;
-  background:#4adb34;
+  background:#3498db;
   margin: 0 auto 0 auto;  
   width:100%; 
   text-align:center;
   margin: 20px 0px 20px 0px;   
-  background-image: url("resources/data1/images/background.jpg");
+   background-image: url("resources/data1/images/background.jpg");
 }
 
 p{
@@ -33,13 +34,13 @@ h1{
 }
 
 .box{
-  background:#C0C0C0;
+  background: #C0C0C0;
   width:300px;
   border-radius:6px;
   margin: 0 auto 0 auto;
   padding:0px 0px 70px 0px;
-  border: #ba996d 4px solid;
-  height: 300px; 
+  border: #ba996d 4px solid; 
+  height: 410px;
 }
 
 .email{
@@ -52,15 +53,6 @@ h1{
   margin-top:10px;
   font-size:1em;
   border-radius:4px;
-}
-
-.password{
-  border-radius:4px;
-  background:#ecf0f1;
-  border: #ccc 1px solid;
-  padding: 8px;
-  width:250px;
-  font-size:1em;
 }
 
 .btn{
@@ -79,9 +71,6 @@ h1{
   font-weight:800;
   font-size:0.8em;
 }
-
-
-
 .btn:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
@@ -91,10 +80,10 @@ h1{
 .btn:hover{
   background:#2CC06B; 
 }
-
+	
 .btn2:hover{
   background:	#8B0000; 
-}
+}	
 
 .btn2{
   float:left;
@@ -115,28 +104,38 @@ h1{
 #btn2:hover{ 
 background:#3594D2; 
 }
+
 </style>
+
 </head>
-<body >
-<br><br><br><br><br><br><br><br>
+<body>
+
  <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
 
-<form action="signIn" method="post" >
+<form action="newProduct" method="post">
 <div class="box">
-<h1>login here</h1>
+<h1>add product details here</h1>
 
-<input type="email" name="email" placeholder="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
+  <input type="text" name="name" placeholder="enter product name" class="email" />
+
+<input type="text" name="category" placeholder="category" class="email" />
+
+  <input type="text" name="brand" placeholder="brand" class="email" />
   
-<input type="password" name="password" placeholder="password" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
+   <input type="text" name="price" placeholder="price" class="email" />
   
-<p><u style="color:black;"><a href="#">forgot  password?</a> </u></p>
+  <input type="text" name="color" placeholder="color" class="email" />
+
+<div class="btn" style="width: 90%;"><input type="submit" name="submit" value="create category">
+</div></a>
+<a href="afterlogin"><div class="btn2" style="width: 90%;">cancel</div></a>
+ <!-- End Btn2 -->
   
-<a><input type="submit" name="submit" value="Sign in" class="btn" style="width: 90%;"></a> <!-- End Btn -->
-<a href="http://localhost:8080/ekartfrontend/"><div class="btn2" style="width: 90%;">cancel</div></a>
 </div> <!-- End Box -->
   
 </form>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+
 </body>
 </html>
